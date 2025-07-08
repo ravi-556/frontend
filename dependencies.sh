@@ -2,8 +2,8 @@
 
 set -e
 
-echo "🔧 Installing Node.js and npm (Amazon Linux 2023)..."
-sudo dnf module enable nodejs:18 -y
+echo "🔧 Installing Node.js 18 and npm (Amazon Linux 2023 via NodeSource)..."
+curl -fsSL https://rpm.nodesource.com/setup_18.x | sudo bash -
 sudo dnf install -y nodejs
 
 echo "🌐 Installing Nginx..."
