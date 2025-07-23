@@ -6,7 +6,7 @@ export default function PostIndex() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:4567/posts").then((res) => setPosts(res.data));
+    axios.get("http://api.mytesting.co.in/posts").then((res) => setPosts(res.data));
   }, []);
 
   return (
