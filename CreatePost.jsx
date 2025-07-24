@@ -12,7 +12,7 @@ export default function CreatePost() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://api.mytesting.co.in/posts", post);
+    await axios.post("https://api.mytesting.co.in/posts", post);
     alert("Post created");
   };
 

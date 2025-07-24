@@ -7,7 +7,7 @@ export default function PostDetail() {
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://api.mytesting.co.in/posts/${id}`).then((res) => setPost(res.data));
+    axios.get(`https://api.mytesting.co.in/posts/${id}`).then((res) => setPost(res.data));
   }, [id]);
 
   if (!post) return <p className="p-4">Loading...</p>;

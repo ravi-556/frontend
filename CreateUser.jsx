@@ -6,7 +6,7 @@ export default function CreateUser() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://api.mytesting.co.in/users", user);
+    await axios.post("https://api.mytesting.co.in/users", user);
     alert("User created");
   };
 
